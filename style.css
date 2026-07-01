@@ -1,0 +1,323 @@
+ body {
+            background-color: #080808;
+            /* margin-top: 25px; */
+        }
+
+        .navcashback {
+            background-color: #ff4d00;
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: lighter;
+            text-decoration: none;
+            padding: 3px;
+            margin: 0px;
+            font-size: 12px;
+        }
+        .banner-content h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Toggle menu button  */
+        .menu-btn {
+            display: none;
+        }
+
+        .parentdiv {
+            display: flex
+        }
+
+        .childdiv1 {
+            background: rgb(6, 6, 6);
+            width: 150px;
+            height: 100vh;
+
+            justify-content: space-between;
+            position: fixed;
+            
+            color: white;
+            display: block;
+
+            padding: 30px 13px;
+
+            text-decoration: none;
+            font-size: 12px;
+            
+        }
+
+        .sidebarpage a:hover {
+            background: #ff5a00;
+        }
+
+        .childdiv2 {
+            background: black;
+            width: calc(100% - 150px);
+            margin-left: 150px;
+            text-align: center;
+
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* childiv2 class btn-page  */
+        .btn-page {
+            border: none;
+            background-color: black;
+            color: white;
+
+
+            width: 100px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        .btn-page a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+
+        .btn-page:hover {
+            background: #ff4d00;
+            
+            cursor: pointer;
+        }
+
+        .contentpage {
+            display: block;
+        }
+
+        /* Right side content css */
+        .restaurant-banner {
+            height: 96vh;
+            background-image: url("./restaurant-banner\ copy.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            width: 100%;
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .order-btn {
+            background: #ff4d00;
+            color: white;
+            border: none;
+            padding: 8px 25px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .order-btn:hover {
+            background: #e64601;
+
+        }
+
+
+
+        .menu {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            color: white;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: 23% 23% 23% 23%;
+            gap: 30px;
+            padding: 10px;
+        justify-content: space-between;
+        /* top: 20px; */
+        
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+            height: 200px;
+            object-fit: cover;
+
+            display: block;
+
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+            font-size: 22px;
+
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0 20px;
+            line-height: 1.5;
+            min-height: 50px;
+
+        }
+
+        .card span {
+            color: #ff4d00;
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+            margin-top: auto;
+
+        }
+
+        .menu-order-btn {
+            background-color: #141313;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .menu-order-btn:hover {
+            background-color: #ff4d00;
+        }
+
+
+        footer {
+            /* background: #eaafaf; */
+            margin-left: 150px;
+        }
+
+        footer h6 {
+            font-weight: bold;
+            margin-bottom: 10px;
+            align-items: center;
+
+
+            width: 100%;
+
+            text-align: center;
+
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 3px 0;
+
+
+            width: 100%;
+
+            text-align: center;
+
+        }
+
+        .bg-footer {
+            background-color: rgb(31, 31, 31);
+
+        }
+
+        @media (max-width:768px) {
+            .menu-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .navcashback {
+                font-size: 10px;
+            }
+
+            /* Toggle menu button  */
+            .menu-btn {
+                display: block;
+                position: fixed;
+                top: 30px;
+                left: 10px;
+                background: #ff4d00;
+                color: white;
+                padding: 8px 12px;
+                border: none;
+                z-index: 1100;
+            }
+
+            /* sidebar mobile */
+            .sidebarpage {
+                top: 30px;
+                left: -200px;
+                transition: 0.4s;
+                z-index: 1000;
+            }
+
+            .sidebarpage.active {
+                left: 0;
+            }
+
+            /* content full width */
+            /* .content {
+                transition: 0.3s;
+            } */
+
+            .content.active {
+                margin-left: 260px;
+            }
+
+            /* banner mobile */
+            .banner {
+                height: 60vh;
+            }
+
+            .banner h1 {
+                font-size: 32px;
+            }
+            
+        footer p {
+            font-size: 12px;
+            /* margin-bottom: 20px; */
+            
+
+        }
+        }
+  

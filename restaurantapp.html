@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>namma - DELICIOUS RESTAURANT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- cashback navbar  -->
+    <nav class="navcashback fixed-top">
+        Super offer on your first order 🎉 — order now and get instant cashback 💸, don’t miss it!
+    </nav>
+
+
+    <div class="parentdiv">
+
+        <!-- childdiv1 - left sidebar  -->
+        <div class="childdiv1 sidebar">
+            <ul class="navbar-left">
+                <li>
+                    <button class="btn-page sidebarpage" id="home" onclick="homePage()"><a href="#"></a>FOOD
+                        ITEMS</button>
+
+                </li>
+                <li>
+                    <button class="btn-page sidebarpage" onclick="burgerPage()"> <a href="#abou">Burger</a>
+                    </button>
+
+                </li>
+                <li>
+                    <button class="btn-page sidebarpage" onclick="pizzaPage()"> <a href="#serv">Pizza</a>
+                    </button>
+
+                </li>
+                <li>
+
+                    <button class="btn-page sidebarpage" onclick="sandwichPage()"> <a href="#sand">Sandwich</a>
+                    </button>
+                </li>
+                <li>
+
+                    <button class="btn-page sidebarpage" onclick="contactPage()"> <a href="#cont">Contact
+                            Us</a>
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="childdiv2">
+            <div class="contentpage" id="homearea"></div>
+            <div class="contentpage" id="burgerarea"></div>
+            <div class="contentpage" id="pizzaarea"></div>
+            <div class="contentpage" id="sandwicharea"></div>
+
+        </div>
+
+    </div>
+
+    <div class="footersec">
+        <div class="contentpage" id="contactarea"></div>
+
+    </div>
+
+    <script>
+        window.onload = homePage;
+
+        //  homePage ------
+        function homePage() {
+            document.getElementById("homearea").style.display = "block"
+
+
+
+            document.getElementById("homearea").innerHTML = `
+        <div class="content">
+            <div class="restaurant-banner">
+                <div class="banner-content">
+                    
+                    <h2>Welcome to</h2>
+                    <h1>DELICIOUS RESTAURANT</h1>
+                    <button class="order-btn">Order Now</button>
+
+                </div>
+            </div>
+        </div>
+    `;
+        }
+        // burgerpage ------
+        function burgerPage() {
+
+
+            document.getElementById("burgerarea").style.display = "block"
+
+
+            document.getElementById("burgerarea").innerHTML = `<section class="menu" id="abou">
+<h1>Burger Menu 🍔 </h1>
+
+<div class="menu-container">
+
+<div class="card">
+<img src="burger1.jpg">
+<h3>Classic Cheese Burger</h3>
+<p>Juicy grilled patty with melted cheese and special sauce.</p>
+<span>₹120</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="burger2.jpg">
+<h3>Crispy Chicken Burger</h3>
+<p>Crunchy fried chicken with fresh lettuce and mayo.</p>
+<span>₹150</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="burger3.jpg">
+<h3>Double Beef Burger</h3>
+<p>Two juicy beef patties layered with cheese.</p>
+<span>₹180</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="burger4.jpg">
+<h3>Veggie Delight Burger</h3>
+<p>Fresh vegetable patty with lettuce and tomato.</p>
+<span>₹110</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="burger5.jpg">
+<h3>Aloo Tikki Burger</h3>
+<p>Crispy potato patty with onion, tomato and mint chutney.</p>
+<span>₹160</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="burger6.jpg">
+<h3>Paneer Tikka Burger</h3>
+<p>Grilled paneer with spicy tikka masala flavour.</p>
+<span>₹190</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="burger7.jpg">
+<h3>Mushroom Swiss Burger</h3>
+<p>Patty topped with sautéed mushrooms.</p>
+<span>₹170</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="burger8.jpg">
+<h3>Tandoori Chicken Burger</h3>
+<p>Smoky tandoori chicken with mint mayo.</p>
+<span>₹140</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+</div>
+</section>`;
+
+        }
+        //pizzapage ------
+        function pizzaPage() {
+
+
+            document.getElementById("pizzaarea").style.display = "block"
+
+
+            document.getElementById("pizzaarea").innerHTML = `<section class="menu" id="serv">
+<h1>Pizza Menu 🍕 </h1>
+
+<div class="menu-container">
+
+<div class="card">
+<img src="pizza1.jpg">
+<h3>Margherita Pizza</h3>
+<p>Classic cheese pizza with tomato sauce and fresh basil.</p>
+<span>₹120</span>
+<button class="menu-order-btn">Order Now</button>
+
+</div>
+
+<div class="card">
+<img src="pizza2.jpg">
+<h3>Paneer Tikka Style Pizza</h3>
+<p>Spicy paneer tikka with onion and capsicum.</p>
+<span>₹150</span>
+<button class="menu-order-btn">Order Now</button>
+
+</div>
+
+<div class="card">
+<img src="pizza3.jpg">
+<h3>Veggie Pizza</h3>
+<p>Loaded with onion, capsicum, mushroom and corn.</p>
+<span>₹180</span>
+<button class="menu-order-btn">Order Now</button>
+
+</div>
+
+<div class="card">
+<img src="pizza4.jpg">
+<h3>Cheese Pizza</h3>
+<p>Extra cheese filled crust with creamy flavour.</p>
+<span>₹110</span>
+<button class="menu-order-btn">Order Now</button>
+
+</div>
+
+<div class="card">
+<img src="pizza5.jpg">
+<h3>Chicken Pizza</h3>
+<p>Spicy chicken tikka pieces with cheese.</p>
+<span>₹160</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="pizza6.jpg">
+<h3>Pepperoni Pizza</h3>
+<p>Classic pizza topped with spicy pepperoni slices and melted mozzarella cheese.</p>
+<span>₹190</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="pizza7.jpg">
+<h3>Mushroom Pizza</h3>
+<p>Delicious pizza topped with fresh mushrooms and melted mozzarella cheese.</p>
+<span>₹170</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="pizza8.jpg">
+<h3>Tandoori Chicken Pizza</h3>
+<p>Smoky tandoori chicken with Indian masala flavour.</p>
+<span>₹140</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+</div>
+</section>`;
+
+        }
+        //sandwichpage ---------
+        function sandwichPage() {
+            document.getElementById("sandwicharea").style.display = "block"
+
+            document.getElementById("sandwicharea").innerHTML = `<section class="menu" id=sand>
+<h1>Sandwich Menu 🥪 </h1>
+
+<div class="menu-container">
+
+<div class="card">
+<img src="sandwich1.jpg">
+<h3>Bombay Grilled Sandwich</h3>
+<p>Butter-grilled sandwich with veggies, chutney, and cheese.</p>
+<span>₹120</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="sandwich2.jpg">
+<h3>Grilled Cheese</h3>
+<p>Crispy toasted bread with melted cheese inside.</p>
+<span>₹150</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="sandwich3.jpg">
+<h3>BLT (Bacon, Lettuce, and Tomato)</h3>
+<p>Crispy bacon, fresh lettuce, and tomato layered in toasted bread.</p>
+<span>₹180</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="sandwich4.jpg">
+<h3>Chicken Fajita/Grilled Chicken Sandwich</h3>
+<p> Juicy grilled chicken with veggies and sauce in toasted bread.</p>
+<span>₹110</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="sandwich5.jpg">
+<h3>Veg Mayo/Coleslaw Sandwich</h3>
+<p>Creamy mayo mixed veggies in soft bread.</p>
+<span>₹160</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="sandwich6.jpg">
+<h3>Tuna Melt</h3>
+<p>Tuna and melted cheese grilled in toasted bread.</p>
+<span>₹190</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="sandwich7.jpg">
+<h3>Cuban Sandwich (Cubano)</h3>
+<p>Grilled sandwich with ham, roasted pork, cheese, and pickles.</p>
+<span>₹170</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+<div class="card">
+<img src="sandwich8.jpg">
+<h3>Egg Salad Sandwich</h3>
+<p>Creamy egg salad served in soft bread.</p>
+<span>₹140</span>
+<button class="menu-order-btn">Order Now</button>
+</div>
+
+</div>
+</section>`;
+        }
+
+        function contactPage() {
+
+            document.getElementById("contactarea").style.display = "block"
+
+            document.getElementById("contactarea").innerHTML = `<footer class="bg-footer text-white pt-4 pb-3" id=cont>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 fw-lighter">
+                    <h6>Contact Info</h6>
+                    <p><strong>Address:</strong> Nagercoil</p>
+                    <p><strong>Email:</strong> mail@gmail.com</p>
+                    <br>
+                </div>
+                
+        
+
+                <div class="col-md-4 fw-lighter">
+                    <h6>Contact Us</h6>
+                    <p>Nagercoil</p>
+                    <p>+91 xxxxxxxxxx</p>
+                    <br>
+                </div>
+                
+
+                <div class="col-md-4 fw-lighter">
+                    <h6>Working Hours</h6>
+                    <p>Monday - Friday : 08:00 - 9:00</p>
+                    <p>Saturday - Sunday : 08:00 - 4:00</p>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+        <p class="text-secondary fw-lighter"> Copyright 2026 © namma Restaurant </p>
+
+    </footer>`;
+
+        }
+
+        function toggleMenu() {
+
+            document.querySelector(".childdiv1").classList.toggle("active");
+            document.querySelector(".childdiv2").classList.toggle("active");
+            document.querySelector(".footersec").classList.toggle("active");
+
+        }
+
+    </script>
+</body>
+
+</html>
